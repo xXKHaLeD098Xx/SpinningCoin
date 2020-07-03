@@ -1,4 +1,6 @@
 # SpinningCoin
+<a href="https://poggit.pmmp.io/p/SpinningCoin"><img src="https://poggit.pmmp.io/shield.state/SpinningCoin"></a>
+
 This is a simple PMMP plugin to create a spinning coin telling players how much coins they have!
 ![SpinningCoin](https://github.com/xXKHaLeD098Xx/SpinningCoin/blob/master/SpinningCoin.gif)
 ## Usage
