@@ -2,7 +2,7 @@
 This is a simple PMMP plugin to create a spinning coin telling players how much coins they have!
 ![SpinningCoin](https://github.com/xXKHaLeD098Xx/SpinningCoin/blob/master/SpinningCoin.gif)
 ## Usage
-NOTE: Commands only work with OPs
+NOTE: Commands only work with OPs<br>
 Spawn the spinning coin: __/spinningcoin spawn__<br>
 Removing the spinning coin: stand near it and execute: __/spinningcoin remove__
 ## Contacts
