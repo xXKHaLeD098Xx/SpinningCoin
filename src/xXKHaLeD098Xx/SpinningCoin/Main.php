@@ -35,7 +35,7 @@ class Main extends PluginBase{
 			if($sender instanceof Player){
 				if($sender->isOp()){
 					if(!isset($args[0])){
-						$sender->sendMessage("§aUsage: /spinningcoin spawn:remove");
+						$sender->sendMessage("§aUsage: /spinningcoin spawn|remove");
 						return false;
 					}
 					if($args[0] === "spawn"){
@@ -46,7 +46,9 @@ class Main extends PluginBase{
 						if($coinEntity !== null){
 							$coinEntity->flagForDespawn();
 							$sender->sendMessage("§bSpinning coin removed.");
+							return true;
 						}
+						$sender->sendMessage("§cNo spinning coin found.");
 					}
 				}
 			}
