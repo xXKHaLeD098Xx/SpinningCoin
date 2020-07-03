@@ -1,0 +1,9 @@
+name: SpinningCoin
+version: 1.0
+main: xXKHaLeD098Xx\SpinningCoin\Main
+api: 3.0.0
+author: xXKHaLeD098Xx
+depend: [EconomyAPI]
+commands:
+  spinningcoin:
+    description: Manage SpinningCoin by xXKHaLeD098Xx
