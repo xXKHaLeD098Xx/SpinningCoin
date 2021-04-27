@@ -79,22 +79,8 @@ class Main extends PluginBase{
 
 	public function spawnCoin(Player $sender){
 		$nbt = Entity::createBaseNBT($sender);
-		$path = $this->getFile()."resources/texture.png";
-		$img = @imagecreatefrompng($path);
-		$skinbytes = "";
-		$s = (int)@getimagesize($path)[1];
-		for($y = 0; $y < $s; $y++) {
-			for($x = 0; $x < 64; $x++) {
-				$colorat = @imagecolorat($img, $x, $y);
-				$a = ((~((int)($colorat >> 24))) << 1) & 0xff;
-				$r = ($colorat >> 16) & 0xff;
-				$g = ($colorat >> 8) & 0xff;
-				$b = $colorat & 0xff;
-				$skinbytes .= chr($r) . chr($g) . chr($b) . chr($a);
-			}
-		}
-
-		@imagedestroy($img);
+		$path = $this->getFile()."resources/texture.pmskin";
+		$skinbytes = file_get_contents($path);
 		$skinTag = new CompoundTag("Skin", [
 			"Name" => new StringTag("Name", $sender->getSkin()->getSkinId()),
 			"Data" => new ByteArrayTag("Data", $skinbytes),
